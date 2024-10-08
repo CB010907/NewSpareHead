@@ -40,8 +40,9 @@ class AdminController{
 
         $image=$request->image;
         $imagename=time().'.'.$image->getClientOriginalExtension();
-        $request->image->move('/productimage',$imagename);
-        $request->image=$imagename;
+        $request->image->move('productimage',$imagename);
+
+        $product->image=$imagename;
 
         $product->save();
         return redirect()->back()->with('message','Product Added Successfully');
@@ -78,7 +79,7 @@ class AdminController{
         if ($image){
             $imagename=time().'.'.$image->getClientOriginalExtension();
             $request->image->move('productimage',$imagename);
-            $request->image=$imagename;
+            $product->image=$imagename;
         }
 
 

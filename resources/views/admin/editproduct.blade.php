@@ -97,7 +97,7 @@
 
                         <div>
                             <label>Current product image</label>
-                            <img height="150" width="100" src="/productimage/{{$product->image}}" alt="">
+                            <img height="150" width="100" src="/productimage/{{$product->image}}" alt="image">
                         </div>
 
                         <div>
