@@ -38,7 +38,7 @@
 <div class="hero_area">
     <!-- header section strat -->
     @include('home.header')
-</div>
+
 <div class="center">
     <table>
         <tr>
@@ -48,14 +48,22 @@
             <th>Image</th>
             <th>Action</th>
         </tr>
+        <?php $totalprice=0; ?>
+        @foreach($cart as $cart)
         <tr>
-            <td>shirt</td>
-            <td>2</td>
-            <td>160</td>
-            <td></td>
-            <td>remove</td>
+            <td>{{$cart->product_title}}</td>
+            <td>{{$cart->quantity}}</td>
+            <td>{{$cart->price}}</td>
+            <td><img src="/productimage/{{$cart->image}}" alt=""></td>
+            <td><a href="{{url('/remove_cart',$cart->id)}}" class="btn btn-danger" onclick="return confirm('are you sure you want to remove this product from the cart')">remove</a></td>
         </tr>
+            <?php $totalprice=$totalprice + $cart->price ?>
+        @endforeach
     </table>
+    <div>
+        <h1>Total Price : {{$totalprice}}</h1>
+
+    </div>
 </div>
 <!-- footer start -->
 @include('home.footer')
