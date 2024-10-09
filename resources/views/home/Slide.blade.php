@@ -5,19 +5,19 @@
     <div id="customCarousel1" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <div class="container ">
+                <div class="container">
                     <div class="row">
                         <div class="col-md-7 col-lg-6 ">
                             <div class="detail-box">
                                 <h1>
                                     <span>
-                                    Sale 20% Off
+                                    Sale Off
                                     </span>
                                     <br>
                                     On Everything
                                 </h1>
                                 <p>
-                                    Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.
+                                    Get something that's with limited time offer
                                 </p>
                                 <div class="btn-box">
                                     <a href="" class="btn1">
@@ -29,6 +29,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="carousel-item ">
                 <div class="container ">
                     <div class="row">
@@ -36,13 +37,13 @@
                             <div class="detail-box">
                                 <h1>
                                     <span>
-                                    Sale 20% Off
+                                    25% Year End Sale
                                     </span>
                                     <br>
-                                    On Everything
+                                    On Special Products
                                 </h1>
                                 <p>
-                                    Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.
+
                                 </p>
                                 <div class="btn-box">
                                     <a href="" class="btn1">
@@ -54,6 +55,8 @@
                     </div>
                 </div>
             </div>
+
+
             <div class="carousel-item">
                 <div class="container ">
                     <div class="row">
@@ -61,13 +64,12 @@
                             <div class="detail-box">
                                 <h1>
                                     <span>
-                                    Sale 20% Off
+                                    Authorized Products
                                     </span>
                                     <br>
-                                    On Everything
+                                    Buy now
                                 </h1>
                                 <p>
-                                    Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.
                                 </p>
                                 <div class="btn-box">
                                     <a href="" class="btn1">

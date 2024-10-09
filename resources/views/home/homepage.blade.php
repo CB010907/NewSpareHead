@@ -10,7 +10,7 @@
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <link rel="shortcut icon" href="Template/images/favicon.png" type="">
+    <link rel="shortcut icon" href="Template/images/favicon.ico" type="">
     <title>SpareHead Emporium</title>
     <!-- bootstrap core css -->
     <link rel="stylesheet" type="text/css" href="Template/css/bootstrap.css" />
@@ -130,10 +130,10 @@
                     </div>
                     <div class="detail-box">
                         <h5>
-                            Fast Delivery
+                            Delivery across Island
                         </h5>
                         <p>
-                            variations of passages of Lorem Ipsum available
+                            Deliver any order with 1 week or less
                         </p>
                     </div>
                 </div>
@@ -248,7 +248,7 @@
                             Free Shipping
                         </h5>
                         <p>
-                            variations of passages of Lorem Ipsum available
+                            Free shipping for selected items
                         </p>
                     </div>
                 </div>
@@ -269,7 +269,7 @@
                             Best Quality
                         </h5>
                         <p>
-                            variations of passages of Lorem Ipsum available
+                            Authorized products by the vehicle brands
                         </p>
                     </div>
                 </div>
@@ -283,34 +283,6 @@
 @include('home.product')
 <!-- end product section -->
 
-<!-- arrival section -->
-<section class="arrival_section">
-    <div class="container">
-        <div class="box">
-            <div class="arrival_bg_box">
-                <img src="Template/images/arrival-bg.png" alt="">
-            </div>
-            <div class="row">
-                <div class="col-md-6 ml-auto">
-                    <div class="heading_container remove_line_bt">
-                        <h2>
-                            #NewArrivals
-                        </h2>
-                    </div>
-                    <p style="margin-top: 20px;margin-bottom: 30px;">
-                        Vitae fugiat laboriosam officia perferendis provident aliquid voluptatibus dolorem, fugit ullam sit earum id eaque nisi hic? Tenetur commodi, nisi rem vel, ea eaque ab ipsa, autem similique ex unde!
-                    </p>
-                    <a href="">
-                        Shop Now
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- end arrival section -->
-
-
 <!-- subscribe section -->
 <section class="subscribe_section">
     <div class="container-fuild">
@@ -321,7 +293,7 @@
                         <div class="heading_container heading_center">
                             <h3>Subscribe To Get Discount Offers</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                        
                         <form action="">
                             <input type="email" placeholder="Enter your email">
                             <button>
@@ -429,13 +401,13 @@
 <!-- footer start -->
 @include('home.footer')
 <!-- footer end -->
-<div class="cpy_">
-    <p class="mx-auto">© 2021 All Rights Reserved By <a href="https://html.design/">Free Html Templates</a><br>
+{{--<div class="cpy_">--}}
+{{--    <p class="mx-auto">© 2021 All Rights Reserved By <a href="https://html.design/">Free Html Templates</a><br>--}}
 
-        Distributed By <a href="https://themewagon.com/" target="_blank">ThemeWagon</a>
+{{--        Distributed By <a href="https://themewagon.com/" target="_blank">ThemeWagon</a>--}}
 
-    </p>
-</div>
+{{--    </p>--}}
+{{--</div>--}}
 <!-- jQery -->
 <script src="Template/js/jquery-3.4.1.min.js"></script>
 <!-- popper js -->

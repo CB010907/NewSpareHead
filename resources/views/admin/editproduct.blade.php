@@ -21,7 +21,7 @@
     <!-- Layout styles -->
     <link rel="stylesheet" href="AdminTemplate/assets/css/style.css">
     <!-- End layout styles -->
-    <link rel="shortcut icon" href="AdminTemplate/assets/images/favicon.png" />
+    <link rel="shortcut icon" href="AdminTemplate/assets/images/favicon.ico" />
 
 
     <style type="text/css">

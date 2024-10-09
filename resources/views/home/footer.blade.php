@@ -4,12 +4,16 @@
             <div class="col-md-4">
                 <div class="full">
                     <div class="logo_footer">
-                        <a href="#"><img width="210" src="Template/images/logo.png" alt="#" /></a>
+                        <a href="#"><img width="210" src="Template/images/logo1.png" alt="#" /></a>
                     </div>
                     <div class="information_f">
-                        <p><strong>ADDRESS:</strong> 28 White tower, Street Name New York City, USA</p>
-                        <p><strong>TELEPHONE:</strong> +91 987 654 3210</p>
-                        <p><strong>EMAIL:</strong> yourmain@gmail.com</p>
+                        <p><strong>ADDRESS:</strong>
+                            201 Silkhouse Street,
+                            Colombo,
+                            20000,
+                            Sri Lanka</p>
+                        <p><strong>TELEPHONE:</strong> +94 76 557 7175</p>
+                        <p><strong>EMAIL:</strong> SpareheadEmporium@gmail.com</p>
                     </div>
                 </div>
             </div>
@@ -23,10 +27,7 @@
                                     <ul>
                                         <li><a href="#">Home</a></li>
                                         <li><a href="#">About</a></li>
-                                        <li><a href="#">Services</a></li>
-                                        <li><a href="#">Testimonial</a></li>
-                                        <li><a href="#">Blog</a></li>
-                                        <li><a href="#">Contact</a></li>
+
                                     </ul>
                                 </div>
                             </div>
@@ -41,6 +42,7 @@
                                         <li><a href="#">Shopping</a></li>
                                         <li><a href="#">Widget</a></li>
                                     </ul>
+cd
                                 </div>
                             </div>
                         </div>
