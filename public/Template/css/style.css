@@ -441,7 +441,7 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: #000000d4;;
   z-index: 3;
   opacity: 0;
   visibility: hidden;
@@ -467,7 +467,6 @@ a:focus {
 .product_section .options a {
   display: inline-block;
   padding: 8px 15px;
-  border-radius: 30px;
   width: 165px;
   text-align: center;
   -webkit-transition: all .3s;
@@ -476,19 +475,19 @@ a:focus {
 }
 
 .product_section .options .option1 {
-  background-color: #f7444e;
-  border: 1px solid #f7444e;
-  color: #ffffff;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  color: #000000;
 }
 
 .product_section .options .option1:hover {
   background-color: transparent;
-  color: #f7444e;
+  color: #ffffff;
 }
 
 .product_section .options .option2 {
-  background-color: #000000;
-  border: 1px solid #000000;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
   color: #ffffff;
 }
 

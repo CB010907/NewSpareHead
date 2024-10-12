@@ -20,27 +20,116 @@
     <link href="Template/css/style.css" rel="stylesheet" />
     <!-- responsive style -->
     <link href="Template/css/responsive.css" rel="stylesheet" />
+
+    <style>
+        .boxhover {
+            transition: transform 0.3s ease;
+        }
+
+        .boxhover:hover {
+            transform: scale(1.1);
+        }
+
+        .product_section .row{
+            justify-content: center;
+        }
+
+        .product_section .box{
+            border-color: rgba(0, 0, 0, 0.46);
+            height: 500px;
+        }
+
+        .product_section .box:hover{
+            border-color: rgb(0, 0, 0);
+            /*background-color: black;*/
+            transform: scale(1.08);
+        }
+
+        .product_section .coloumview{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 10px;
+            align-items: center;
+        }
+
+        .product_section .addcart input{
+            background-color: #ffffff;
+            border: 1px solid #ffffff;
+            color: #000000;
+            transition: all .3s;
+        }
+        .product_section .addcart:hover{
+            background-color: transparent;
+            color: #ffffff;
+        }
+
+
+
+    </style>
 </head>
 <body>
 <div class="hero_area">
     <!-- header section strat -->
-    @include('home.header')
+    <header class="header_section">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg custom_nav-container ">
+                <a class="navbar-brand" href="{{url('/')}}"><img width="350" src="Template/images/logo.png" alt="#" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class=""> </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{url('/')}}">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Products</a>
+                        </li>
 
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url('show_cart')}}">Cart</a>
+                        </li>
+
+                        @if (Route::has('login'))
+                            @auth
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('dashboard') }}">Profile</a>
+                                </li>
+                            @else
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('login') }}">Sign In</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('register') }}">Sign Up</a>
+                                </li>
+                            @endauth
+                        @endif
+                        <form class="form-inline">
+                            <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                        </form>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
     <!-- slider section -->
     @include('home.slide')
 </div>
-
 <!-- why section -->
-<section class="why_section layout_padding">
+<section class="why_section layout_padding" >
     <div class="container">
         <div class="heading_container heading_center">
-            <h2>
+            <h2 >
                 Why Shop With Us
             </h2>
         </div>
         <div class="row">
             <div class="col-md-4">
-                <div class="box ">
+                <div class="box boxhover">
                     <div class="img-box">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                            <g>
@@ -139,7 +228,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="box ">
+                <div class="box boxhover">
                     <div class="img-box">
                         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 490.667 490.667" style="enable-background:new 0 0 490.667 490.667;" xml:space="preserve">
                            <g>
@@ -254,7 +343,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="box ">
+                <div class="box boxhover">
                     <div class="img-box">
                         <svg id="_30_Premium" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg" data-name="30_Premium">
                             <g id="filled">
@@ -286,17 +375,16 @@
 <!-- subscribe section -->
 <section class="subscribe_section">
     <div class="container-fuild">
-        <div class="box">
+        <div class="box" style="background-color: white;">
             <div class="row">
                 <div class="col-md-6 offset-md-3">
                     <div class="subscribe_form ">
                         <div class="heading_container heading_center">
-                            <h3>Subscribe To Get Discount Offers</h3>
+                            <h3 style="color: black">Subscribe To Get Discount Offers</h3>
                         </div>
-
                         <form action="">
-                            <input type="email" placeholder="Enter your email">
-                            <button>
+                            <input type="email" placeholder="Enter your email" style="border: 1px solid black">
+                            <button style="border-radius: 0px; width: 200px;">
                                 subscribe
                             </button>
                         </form>

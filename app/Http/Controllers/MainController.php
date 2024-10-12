@@ -100,10 +100,11 @@ class MainController
             $order=new order;
             $order->name=$data->name;
             $order->email=$data->email;
-            $order->phone=$data->address;
+            $order->phone=$data->phone;
+            $order->address=$data->address;
             $order->user_id=$data->user_id;
 
-            $order->product_name=$data->product_name;
+            $order->product_name=$data->title;
             $order->price=$data->price;
             $order->quantity=$data->quantity;
             $order->image=$data->image;
@@ -146,7 +147,7 @@ class MainController
             $order=new order;
             $order->name=$data->name;
             $order->email=$data->email;
-            $order->phone=$data->address;
+            $order->phone=$data->phone;
             $order->user_id=$data->user_id;
 
             $order->product_name=$data->product_name;
@@ -170,5 +171,6 @@ class MainController
 
         return back();
     }
+
 }
 

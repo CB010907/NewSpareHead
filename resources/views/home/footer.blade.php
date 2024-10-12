@@ -25,9 +25,11 @@
                                 <div class="widget_menu">
                                     <h3>Menu</h3>
                                     <ul>
-                                        <li><a href="#">Home</a></li>
-                                        <li><a href="#">About</a></li>
-
+                                        <li><a href="{{url('/')}}">Home</a></li>
+                                        <li><a href="{{url('')}}">About</a></li>
+                                        <li><a href="{{url('')}}">Products</a></li>
+                                        <li><a href="{{url('login')}}">Sign In</a></li>
+                                        <li><a href="{{url('register')}}">Sign Up</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -36,13 +38,9 @@
                                     <h3>Account</h3>
                                     <ul>
                                         <li><a href="#">Account</a></li>
+                                        <li><a href="#">Cart</a></li>
                                         <li><a href="#">Checkout</a></li>
-                                        <li><a href="#">Login</a></li>
-                                        <li><a href="#">Register</a></li>
-                                        <li><a href="#">Shopping</a></li>
-                                        <li><a href="#">Widget</a></li>
                                     </ul>
-cd
                                 </div>
                             </div>
                         </div>
@@ -51,7 +49,7 @@ cd
                         <div class="widget_menu">
                             <h3>Newsletter</h3>
                             <div class="information_f">
-                                <p>Subscribe by our newsletter and get update protidin.</p>
+                                <p>Subscribe by our platform to get updates daily.</p>
                             </div>
                             <div class="form_sub">
                                 <form>

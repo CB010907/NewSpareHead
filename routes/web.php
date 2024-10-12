@@ -28,6 +28,7 @@ Route::get('/display_product',[AdminController::class,'display_product']);
 Route::get('/delete_product/{id}',[AdminController::class,'delete_product']);
 Route::get('/edit_product/{id}',[AdminController::class,'edit_product']);
 Route::post('/edit_product_confirm/{id}',[AdminController::class,'edit_product_confirm']);
+Route::get('/order',[AdminController::class,'order']);
 
 Route::get('/product_details/{id}',[MainController::class,'product_details']);
 
