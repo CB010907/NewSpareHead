@@ -11,9 +11,9 @@
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <link rel="shortcut icon" href="Template/images/favicon.ico" type="">
+    <link rel="shortcut icon" href="Template/images/favicon.png" type="">
     <title>Online payment</title>
-{{--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />--}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- bootstrap core css -->
     <link rel="stylesheet" type="text/css" href="Template/css/bootstrap.css" />
@@ -114,7 +114,13 @@
 <!-- footer start -->
 @include('home.footer')
 <!-- footer end -->
+{{--<div class="cpy_">--}}
+{{--    <p class="mx-auto">© 2021 All Rights Reserved By <a href="https://html.design/">Free Html Templates</a><br>--}}
 
+{{--        Distributed By <a href="https://themewagon.com/" target="_blank">ThemeWagon</a>--}}
+
+{{--    </p>--}}
+{{--</div>--}}
 <!-- jQery -->
 <script src="Template/js/jquery-3.4.1.min.js"></script>
 <!-- popper js -->

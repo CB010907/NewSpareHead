@@ -11,7 +11,7 @@
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <link rel="shortcut icon" href="Template/images/favicon.png" type="">
+    <link rel="shortcut icon" href="Template/images/favicon.ico" type="">
     <title>SpareHead Emporium</title>
     <!-- bootstrap core css -->
     <link rel="stylesheet" type="text/css" href="Template/css/bootstrap.css" />
@@ -23,14 +23,27 @@
     <link href="Template/css/responsive.css" rel="stylesheet" />
     <style type="text/css">
         .center{
-            margin: auto;
-            width: 50%;
+            width: 100%;
             text-align: center;
             padding: 30px;
         }
-        table,th,td{
-            border: 1px solid black;
+        table{
+            display: flex;
+            justify-content: center;
+
         }
+        th,td{
+            border: 1px solid black;
+            padding: 20px;
+        }
+
+        .cashhover{
+            transition: transform 0.3s ease;
+        }
+        .cashhover:hover{
+            transform: scale(1.1);
+        }
+
     </style>
 
 </head>
@@ -105,9 +118,9 @@
         <tr>
             <td>{{$cart->product_title}}</td>
             <td>{{$cart->quantity}}</td>
-            <td>{{$cart->price}}</td>
-            <td><img src="/productimage/{{$cart->image}}" alt=""></td>
-            <td>
+            <td>Rs. {{$cart->price}}</td>
+            <td><img src="/productimage/{{$cart->image}}" alt="product image" style="width: 200px; padding: 5px"></td>
+            <td style="padding: 20px">
                 <form action="{{ url('/remove_cart', $cart->id) }}" method="POST" onsubmit="return confirm('Are you sure you want to remove this product from the cart?');">
                     @csrf
                     <button type="submit" class="btn btn-danger">Remove</button>
@@ -117,13 +130,17 @@
             <?php $totalprice=$totalprice + $cart->price ?>
         @endforeach
     </table>
+    <br>
     <div>
-        <h1>Total Price : {{$totalprice}}</h1>
+        <h1 style="font-size: 30px">Total Price : {{$totalprice}}</h1>
     </div>
     <div>
-        <h1>Proceed to Order the items</h1>
-        <a href="{{url('cash_order')}}" class="btn btn-primary">Cash on Delivery</a>
-        <a href="{{url('stripe',$totalprice)}}" class="btn btn-primary">Pay Online</a>
+        <h1 style="font-size: 30px">Proceed to Order the items</h1>
+        <div style="display: flex; justify-content: center; gap:20px; ">
+            <a href="{{url('cash_order')}}" class="btn btn-primary cashhover">Cash on Delivery</a>
+            <a href="{{url('stripe',$totalprice)}}" class="btn btn-primary cashhover">Pay Online</a>
+        </div>
+
     </div>
 </div>
 <!-- footer start -->

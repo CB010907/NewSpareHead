@@ -11,7 +11,7 @@
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <link rel="shortcut icon" href="Template/images/favicon.png" type="">
+    <link rel="shortcut icon" href="Template/images/favicon.ico" type="">
     <title>SpareHead Emporium</title>
     <!-- bootstrap core css -->
     <link rel="stylesheet" type="text/css" href="Template/css/bootstrap.css" />
