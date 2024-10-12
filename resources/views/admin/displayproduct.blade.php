@@ -41,6 +41,12 @@
             width: 100px;
             height: 150px;
         }
+        th{
+            padding: 30px;
+        }
+        tr{
+            border: 2px solid white;
+        }
     </style>
 
 </head>

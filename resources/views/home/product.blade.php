@@ -43,18 +43,18 @@
                             <h6>
                                 Discount Price
                                 <br>
-                                ${{ $products->discount_price }}
+                                Rs.{{ $products->discount_price }}
                             </h6>
                                 <h6 style="text-decoration: line-through;">
                                     Price
                                     <br>
-                                    ${{ $products->price }}
+                                    Rs.{{ $products->price }}
                                 </h6>
                             @else
                                 <h6>
                                     Price
                                     <br>
-                                    ${{ $products->price }}
+                                    Rs.{{ $products->price }}
                                 </h6>
                             @endif
 

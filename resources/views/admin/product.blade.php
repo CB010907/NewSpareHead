@@ -32,7 +32,10 @@
         label{
             display: inline-block;
             width: 200px;
+            padding: 5px;
         }
+
+
     </style>
 
 </head>

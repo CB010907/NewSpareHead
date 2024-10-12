@@ -7,5 +7,20 @@
             <span class="mdi mdi-menu"></span>
         </button>
 
+        @if (Route::has('login'))
+            @auth
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('dashboard') }}">Profile</a>
+                </li>
+            @else
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('login') }}">Sign In</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('register') }}">Sign Up</a>
+                </li>
+            @endauth
+        @endif
     </div>
 </nav>

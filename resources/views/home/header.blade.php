@@ -28,9 +28,7 @@
                     @if (Route::has('login'))
                         @auth
                             <li class="nav-item">
-                                <x-app-layout>
-
-                                </x-app-layout>
+                                <a class="nav-link" href="{{ route('dashboard') }}">Profile</a>
                             </li>
                         @else
                             <li class="nav-item">

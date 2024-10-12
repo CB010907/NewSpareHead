@@ -34,6 +34,7 @@
             display: inline-block;
             width: 200px;
         }
+
     </style>
 
 </head>
@@ -56,38 +57,38 @@
                     </div>
                 @endif
                 <div class="center">
-                    <h1>Add Product</h1>
+                    <h1>Edit Product</h1>
 
                     <form action="{{url('/edit_product_confirm',$product->id)}}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div>
                             <label>Product Name</label>
-                            <input type="text" name="title" placeholder="Write product name" value="{{$product->title}}">
+                            <input type="text" name="title" placeholder="Write product name" value="{{$product->title}}" style="width: 500px;">
                         </div>
 
                         <div>
                             <label>Product Description</label>
-                            <input type="text" name="description" placeholder="Write product details" value="{{$product->description}}">
+                            <input type="text" name="description" placeholder="Write product details" value="{{$product->description}}" style="width: 500px;">
                         </div>
 
                         <div>
                             <label>Price</label>
-                            <input type="number" name="price" placeholder="Write product price" value="{{$product->price}}">
+                            <input type="number" name="price" placeholder="Write product price" value="{{$product->price}}" style="width: 500px;">
                         </div>
 
                         <div>
                             <label>Discounted Price</label>
-                            <input type="number" name="discount_price" placeholder="Write discounted price" value="{{$product->discount_price}}">
+                            <input type="number" name="discount_price" placeholder="Write discounted price" value="{{$product->discount_price}}" style="width: 500px;">
                         </div>
 
                         <div>
                             <label>Quantity</label>
-                            <input type="number" min="0"  name="quantity" placeholder="Write product quantity" value="{{$product->quantity}}">
+                            <input type="number" min="0"  name="quantity" placeholder="Write product quantity" value="{{$product->quantity}}" style="width: 500px;">
                         </div>
 
                         <div>
                             <label>Category</label>
-                            <select name="category" required="">
+                            <select name="category" required="" style="width: 100px;">
                                 <option value="{{$product->category}}" selected="">{{$product->category}}</option>
                                 @foreach($category as $category)
                                     <option value="{{$category->category_name}}">{{$category->category_name}}</option>
@@ -97,7 +98,7 @@
 
                         <div>
                             <label>Current product image</label>
-                            <img height="150" width="100" src="/productimage/{{$product->image}}" alt="image">
+                            <img height="200" width="200" src="/productimage/{{$product->image}}" alt="image">
                         </div>
 
                         <div>

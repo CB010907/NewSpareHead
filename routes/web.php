@@ -6,15 +6,15 @@ use App\Http\Controllers\AdminController;
 
 Route::get('/',[MainController::class,'SpareHeadHome']);
 
-//Route::middleware([
-//    'auth:sanctum',
-//    config('jetstream.auth_session'),
-//    'verified',
-//])->group(function () {
-//    Route::get('/dashboard', function () {
-//        return view('dashboard');
-//    })->name('dashboard');
-//});
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified',
+])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+});
 
 Route::get('/home',[MainController::class,'AuthenticationUserAdmin']) -> name('home');
 
@@ -34,3 +34,7 @@ Route::get('/product_details/{id}',[MainController::class,'product_details']);
 Route::post('/add_cart/{id}',[MainController::class,'add_cart']);
 Route::get('/show_cart',[MainController::class,'show_cart']);
 Route::post('/remove_cart/{id}',[MainController::class,'remove_cart']);
+
+Route::get('/cash_order',[MainController::class,'cash_order']);
+Route::get('/stripe/{totalprice}',[MainController::class,'stripe']);
+Route::post('stripe/{totalprice}', [MainController::class,'stripePost'])->name('stripe.post');

@@ -39,6 +39,13 @@
     <!-- header section strat -->
     @include('home.header')
 
+    @if(session()->has('message'))
+        <div class="alert alert-success">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">X</button>
+            {{session()->get('message')}}
+        </div>
+    @endif
+
 <div class="center">
     <table>
         <tr>
@@ -62,19 +69,23 @@
     </table>
     <div>
         <h1>Total Price : {{$totalprice}}</h1>
-
+    </div>
+    <div>
+        <h1>Proceed to Order the items</h1>
+        <a href="{{url('cash_order')}}" class="btn btn-primary">Cash on Delivery</a>
+        <a href="{{url('stripe',$totalprice)}}" class="btn btn-primary">Pay Online</a>
     </div>
 </div>
 <!-- footer start -->
 @include('home.footer')
 <!-- footer end -->
-<div class="cpy_">
-    <p class="mx-auto">© 2021 All Rights Reserved By <a href="https://html.design/">Free Html Templates</a><br>
+{{--<div class="cpy_">--}}
+{{--    <p class="mx-auto">© 2021 All Rights Reserved By <a href="https://html.design/">Free Html Templates</a><br>--}}
 
-        Distributed By <a href="https://themewagon.com/" target="_blank">ThemeWagon</a>
+{{--        Distributed By <a href="https://themewagon.com/" target="_blank">ThemeWagon</a>--}}
 
-    </p>
-</div>
+{{--    </p>--}}
+{{--</div>--}}
 <!-- jQery -->
 <script src="Template/js/jquery-3.4.1.min.js"></script>
 <!-- popper js -->
@@ -83,5 +94,6 @@
 <script src="Template/js/bootstrap.js"></script>
 <!-- custom js -->
 <script src="Template/js/custom.js"></script>
+</div>
 </body>
 </html>
